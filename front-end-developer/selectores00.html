@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2em;
+        }
+        
+        div p {
+            color: lime;
+            background-color: gray;
+            z-index: 1;
+        }
+        
+        div>div {
+            background-color: navy;
+            color: white;
+        }
+        
+        .es {
+            background-color: red;
+        }
+        
+        p+section {
+            background-color: palevioletred;
+        }
+        
+        div~p {
+            background-color: rgb(112, 148, 216);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div>
+            <p>q pasa puta</p>
+            <div class="es">es</div>
+        </div>
+    </div>
+    <p>Clase de selectores</p>
+    <p>Clase de selectores</p>
+    <section>
+        Es lo mejor
+    </section>
+</body>
+
+</html>
