@@ -15,9 +15,33 @@
         
         .card {
             width: 200px;
-            height: 200px;
-            background: rgb(122, 105, 78);
+            height: 230px;
+            background: rgb(63, 94, 251);
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
             border-radius: 30px;
+            overflow: hidden;
+            border: 10px ridge rgb(104, 61, 185);
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+        
+        .card img {
+            width: 100%;
+            border-radius: 20px;
+            margin-top: 0px;
+        }
+        
+        .card p {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        
+        .name::first-letter {
+            font-weight: bold;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -25,7 +49,9 @@
 <body>
     <section>
         <div class="card">
-            <img src="" alt="">
+            <img src="tita.jpg" alt="dog">
+            <p class="name">Tita is a beautiful dog which lives in Bolivar City, she likes to sleep all day long, she's lazy as fuck, she cries for almost everything and enjoys being petted</p>
+
         </div>
     </section>
 </body>

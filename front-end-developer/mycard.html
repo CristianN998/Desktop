@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        body {
+            background-image: url("bg02.jpg");
+        }
+        
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .card {
+            top: 100px;
+            width: 500px;
+            height: 600px;
+            background: rgb(241, 232, 232);
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 1);
+            -webkit-box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 1);
+            position: relative;
+        }
+        
+        .bg {
+            width: 100%;
+            height: 60%;
+            margin-top: 0px;
+            position: relative;
+        }
+        
+        .cristian {
+            border-radius: 100px;
+            width: 200px;
+            height: 200px;
+            margin-top: -140px;
+            margin-left: 150px;
+            box-sizing: border-box;
+            border: 5px solid rgba(0, 0, 0);
+            box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+            -webkit-box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+            -moz-box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+        }
+        
+        .cristiancaja {
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+        }
+        
+        .card p {
+            color: black;
+            text-align: center;
+            font-size: 50px;
+            height: 20px;
+        }
+        
+        .card p:nth-child(4) {
+            font-size: 20px;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .caja00 {
+            display: inline-block;
+            background-image: url("twitter.png");
+            height: 64px;
+            width: 64px;
+            border-radius: 20px;
+            border: 2px solid black;
+            box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+            -webkit-box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+            -moz-box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+        }
+        
+        .caja01 {
+            display: inline-block;
+            background-image: url("instagram.png");
+            height: 64px;
+            width: 64px;
+            border-radius: 20px;
+            border: 2px solid black;
+            box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+            -webkit-box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+            -moz-box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+        }
+        
+        .caja02 {
+            display: inline-block;
+            background-image: url("linkedin.png");
+            height: 64px;
+            width: 64px;
+            border-radius: 20px;
+            border: 2px solid black;
+            box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+            -webkit-box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+            -moz-box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+        }
+        
+        .caja03 {
+            display: inline-block;
+            background-image: url("github.png");
+            height: 64px;
+            width: 64px;
+            border-radius: 20px;
+            border: 2px solid black;
+            box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+            -webkit-box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+            -moz-box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.64);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="card">
+            <img src="whilealiveenhanced.png" alt="background" class="bg">
+            <div class="cristiancaja"><img src="cat.jpg" alt="Cristian Casallas " class="cristian "></div>
+            <p class="name">Cristian Casallas</p>
+            <p>Software developer</p>
+            <div class="container">
+                <form action="https://twitter.com/CristianN998" target="blank">
+                    <button class="caja00"></button>
+                </form>
+                <form action="https://www.instagram.com/corneliusfreud/" target="blank">
+                    <button class="caja01"></button>
+                </form>
+                <form action="https://www.linkedin.com/in/cristian-david-casallas-velandia-81630b174/" target="blank">
+                    <button class="caja02"></button>
+                </form>
+                <form action="https://github.com/CristianN998" target="blank_">
+                    <button class="caja03"></button>
+                </form>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>
