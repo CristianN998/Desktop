@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: palegoldenrod;
+        }
+        
+        .one {
+            z-Index: 5;
+        }
+        
+        .two {
+            z-index: 4;
+        }
+        
+        .red {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(255, 0, 0);
+            z-index: 6;
+        }
+        
+        .blue {
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            z-index: 4;
+        }
+        
+        .yellow {
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+            z-index: 100;
+            top: 10px
+        }
+        
+        .cyan {
+            width: 80px;
+            height: 80px;
+            background-color: cyan;
+            border-radius: 20px;
+            border: 5px dashed red;
+            top: 90px;
+            right: 40px;
+            z-index: 20;
+        }
+        
+        .fucsia {
+            width: 80px;
+            height: 80px;
+            background-color: fuchsia;
+            border-radius: 20px;
+            border: 5px dashed black;
+            top: 70px;
+            right: 60px;
+            z-index: 10;
+        }
+        
+        .green {
+            width: 80px;
+            height: 80px;
+            background-color: green;
+            border-radius: 20px;
+            border: 5px dashed blue;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">Master</div>
+    <div class="two">Platzi</div>
+    <section>
+        <div class="red">Red</div>
+        <div class="blue">Blue
+            <div class="yellow">Yellow</div>
+        </div>
+        <div class="cyan">Cyan</div>
+        <div class="fucsia">Fucsia</div>
+        <div class="green">Green</div>
+    </section>
+</body>
+
+</html>
