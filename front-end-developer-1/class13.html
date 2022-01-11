@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --white: #fff;
+            --black: #000;
+            --very-light-pink: rgb(86, 69, 146);
+            --text-input-field: #fff;
+            --hospital-green: #8694ff;
+            --yellow: rgb(255, 255, 255);
+            --pinkneon: #8694ff;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+            --card-size: 240px;
+        }
+        
+        * {
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        body {
+            background: var(--yellow);
+            margin: 0;
+        }
+        
+        .product-detail {
+            width: 500px;
+            padding: 24px;
+            position: absolute;
+            left: 0;
+            box-sizing: border-box;
+        }
+        
+        .order {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 16px;
+            align-items: center;
+            background: rgba(86, 69, 146, 0.3);
+            margin-bottom: 24px;
+            border-radius: 8px;
+            padding: 0 24px;
+        }
+        
+        .order p:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .order p span:nth-child(1) {
+            font-size: var(--md);
+        }
+        
+        .order p span:nth-child(2) {
+            font-size: var(--sm);
+            color: rgba(86, 69, 146, 0.5);
+        }
+        
+        .order p:nth-child(2) {
+            text-align: end;
+            font-weight: bold;
+        }
+        
+        .shopping-cart {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 24px;
+            border-radius: 8px;
+            padding: 0 24px;
+            background: rgba(86, 69, 146, 0.1);
+            margin: 5px;
+        }
+        
+        .shopping-cart figure img {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        
+        .shopping-cart p span:nth-child(2) {
+            font-size: var(--sm);
+            color: rgba(86, 69, 146, 0.5);
+        }
+        
+        .shopping-cart p:nth-child(3) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        
+        .span {
+            color: var(--very-light-pink);
+            font-size: var(--lg);
+            font-weight: bold;
+        }
+        
+        p {
+            color: var(--very-light-pink);
+        }
+        
+        .title {
+            font-size: var(--lg);
+            font-weight: bold;
+            position: relative;
+            margin-left: 20px;
+        }
+        
+        .title-container {
+            display: flex;
+        }
+        
+        .title-container img {
+            transform: rotate(180deg);
+            margin-top: 25px;
+            margin-left: 0;
+            position: absolute;
+            z-index: 2;
+        }
+        
+        .primary-button {
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 60px;
+            margin-top: -10px;
+        }
+        
+        .add-to-cart-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @media (max-width: 640px) {
+            .product-detail {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="product-detail">
+        <div class="title-container">
+            <img src="./icons/flechita.svg" alt="arrow">
+        </div>
+        <p class="title">My order</p>
+
+        <div class="my-order-content">
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://images.pexels.com/photos/255934/pexels-photo-255934.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="">
+                    <p2></p2>
+                </figure>
+                <p>Bike</p>
+                <p>$300,00</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://images.pexels.com/photos/104842/bmw-vehicle-ride-bike-104842.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+                    <p2></p2>
+                </figure>
+                <p>Motorbike</p>
+                <p>$5000,00</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://images.pexels.com/photos/10029763/pexels-photo-10029763.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="">
+                    <p2></p2>
+                </figure>
+                <p>Tesla</p>
+                <p>$70500,00</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+
+
+            <div class="order">
+                <p>
+                    <span>Total</span>
+                </p>
+                <p class="span">$75800,00</p>
+
+            </div>
+            <button class="primary-button ">
+                Checkout         
+                 </button>
+        </div>
+
+    </aside>
+</body>
+
+</html>
