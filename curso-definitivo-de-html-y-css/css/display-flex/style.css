@@ -1,0 +1,49 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        font-size: 1.6rem;
+    }
+    
+    .container {
+        border: 0.3rem solid black;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .box {
+        flex-grow: 1;
+        height: 10rem;
+        flex-basis: 10rem;
+    }
+    
+    .box1 {
+        background: green;
+    }
+    
+    .box2 {
+        background: red;
+    }
+    
+    .box3 {
+        background: blue;
+    }
+    
+    .box4 {
+        background: purple;
+    }
+    
+    .box5 {
+        background: yellow;
+    }
+    
+    .box6 {
+        background: brown;
+    }

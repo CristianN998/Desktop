@@ -6,25 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supermarket list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
     <style>
+         :root {
+            --white: #fff;
+            --black: #000;
+            --very-light-green: #C1DBB3;
+            --text-input-field: #FAEDCA;
+            --hospital-green: #7EBC89;
+            --yellow: #fff;
+            --pinkneon: #8694ff;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+            --card-size: 240px;
+        }
+        
+        h1 {
+            text-align: center;
+            border: 10px solid var(--hospital-green);
+        }
+        
+        img {
+            border-radius: 30px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            background: var(--white);
+        }
+        
         a {
             text-decoration: none;
         }
         
-        li {
-            padding: 2px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        ol {
+            border: 10px solid var(--very-light-green);
+            margin-right: 50px;
+            border-radius: 10px;
+        }
+        
+        figure {
+            box-sizing: border-box;
+        }
+        
+        footer {
+            display: flex;
+            justify-content: center;
+            background: gray;
+            width: 100vw;
         }
         
         .titles {
-            background: rgba(255, 0, 0, .5);
-            width: 140px;
-            color: green;
+            color: var(--pinkneon);
+            width: 100px;
+            height: 20px;
+            border: 10px solid var(--very-light-green);
+            border-radius: 10px;
         }
         
-        .subtitle {
-            background: rgba(255, 0, 0, .2);
-            width: 100px;
-            color: pink;
+        .list {
+            color: var(--hospital-green);
         }
     </style>
 </head>
@@ -38,25 +92,76 @@
             <li class="titles"><a href="https://en.wikipedia.org/wiki/Fruit" class="title" target="_Blank">Fruits</a></li>
             <ol>
                 <li class="subtitle">
-                    <a href="https://en.wikipedia.org/wiki/Banana" target="_Blank">Banana</a>
-                    <img src="https://images.pexels.com/photos/5945848/pexels-photo-5945848.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="banana"></li>
-                <li class="subtitle"><a href="https://en.wikipedia.org/wiki/Watermelon" target="_Blank">Watermelon</a> <img src="https://images.pexels.com/photos/5946081/pexels-photo-5946081.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
-                <li class="subtitle"><a href="https://en.wikipedia.org/wiki/Apple" target="_Blank">Apple</a> <img src="https://images.pexels.com/photos/3652898/pexels-photo-3652898.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
+                    <figure>
+                        <figcaption><a href="https://en.wikipedia.org/wiki/Banana" target="_Blank" class="list">Banana</a>
+                        </figcaption>
+                        <img src="https://images.pexels.com/photos/5945848/pexels-photo-5945848.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="banana"></li>
+                </figure>
+                <li class="subtitle">
+                    <figure>
+                        <figcaption><a href="https://en.wikipedia.org/wiki/Watermelon" target="_Blank" class="list">Watermelon</a>
+                        </figcaption><img src="https://images.pexels.com/photos/5946081/pexels-photo-5946081.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
+                </figure>
+                <li class="subtitle">
+                    <figure>
+                        <figcaption><a href="https://en.wikipedia.org/wiki/Apple" target="_Blank" class="list">Apple</a>
+                        </figcaption>
+                        <img src="https://images.pexels.com/photos/3652898/pexels-photo-3652898.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
+                </figure>
+
             </ol>
             <li class="titles"><a href="https://en.wikipedia.org/wiki/Protein_(nutrient)" target="_Blank">Protein</a></li>
             <ol>
-                <li class="subtitle"><a href="https://en.wikipedia.org/wiki/Meat" target="_Blank">Meat</a> <img src="https://images.pexels.com/photos/6896518/pexels-photo-6896518.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
-                <li class="subtitle"><a href="https://en.wikipedia.org/wiki/Fish" target="_Blank">Fish</a> <img src="https://images.pexels.com/photos/1578445/pexels-photo-1578445.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
-                <li class="subtitle"><a href="https://en.wikipedia.org/wiki/Chicken" target="_Blank">Chicken</a> <img src="https://images.pexels.com/photos/1562389/pexels-photo-1562389.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
+                <li class="subtitle">
+                    <figure>
+                        <figcaption><a href="https://en.wikipedia.org/wiki/Meat" target="_Blank" class="list">Meat</a>
+                        </figcaption>
+                        <img src="https://images.pexels.com/photos/6896518/pexels-photo-6896518.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
+                </figure>
+                <li class="subtitle">
+                    <figure>
+                        <figcaption><a href="https://en.wikipedia.org/wiki/Fish" target="_Blank" class="list">Fish</a>
+                        </figcaption> <img src="https://images.pexels.com/photos/1578445/pexels-photo-1578445.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
+                </figure>
+                <li class="subtitle">
+                    <figure>
+                        <figcaption>
+                            <a href="https://en.wikipedia.org/wiki/Chicken" target="_Blank" class="list">Chicken</a>
+                        </figcaption>
+                        <img src="https://images.pexels.com/photos/1562389/pexels-photo-1562389.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
+                </figure>
             </ol>
+
             <li class="titles"><a href="https://en.wikipedia.org/wiki/Vegetable" target="_Blank">Vegetables</a></li>
             <ol>
-                <li class="subtitle"><a href="https://en.wikipedia.org/wiki/Cucumber" target="_Blank">Cucumber</a> <img src="https://images.pexels.com/photos/128420/pexels-photo-128420.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
-                <li class="subtitle"><a href="https://en.wikipedia.org/wiki/Cabbage" target="_Blank">Cabbage</a> <img src="https://images.pexels.com/photos/4585545/pexels-photo-4585545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
-                <li class="subtitle"><a href="https://en.wikipedia.org/wiki/Eggplant" target="_Blank">Eggplant</a> <img src="https://images.pexels.com/photos/1340856/pexels-photo-1340856.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
+                <li class="subtitle">
+                    <figure>
+                        <figcaption><a href="https://en.wikipedia.org/wiki/Cucumber" target="_Blank" class="list">Cucumber</a>
+                        </figcaption>
+                        <img src="https://images.pexels.com/photos/128420/pexels-photo-128420.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
+                </figure>
+                <li class="subtitle">
+                    <figure>
+                        <figcaption><a href="https://en.wikipedia.org/wiki/Cabbage" target="_Blank" class="list">Cabbage</a>
+                        </figcaption><img src="https://images.pexels.com/photos/4585545/pexels-photo-4585545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
+                </figure>
+                <li class="subtitle">
+                    <figure>
+                        <figcaption>
+                            <a href="https://en.wikipedia.org/wiki/Eggplant" target="_Blank" class="list">Eggplant</a>
+                        </figcaption>
+                        <img src="https://images.pexels.com/photos/1340856/pexels-photo-1340856.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></li>
+                </figure>
             </ol>
+
         </ul>
     </main>
+    <footer>
+
+        <p>Made by Cristian Casallas</p>
+
+
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,11 @@
+p {
+    color: aqua;
+    background: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}

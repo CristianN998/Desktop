@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        .body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main-nav {
+            margin-top: 10px;
+            padding-left: 0;
+            list-style: none;
+            background-color: teal;
+        }
+        
+        .main-nav-item {
+            display: inline-block;
+        }
+        
+        .main-nav-item a {
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: red;
+        }
+        
+        .main-nav-item:hover {
+            transform: scale(1.2);
+        }
+        
+        .main-nav-item a:active {
+            color: blue;
+        }
+        
+        .main-nav-item a::after {
+            content: " | "
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav-item"><a href="">Home</a></li>
+                <li class="main-nav-item"><a href="">Courses</a></li>
+                <li class="main-nav-item"><a href="">Teachers</a></li>
+                <li class="main-nav-item"><a href="">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <ul>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Lato, sans-serif, Arial;
+    text-rendering: optimizeLegibility;
+    background: rgb(31, 55, 68);
+    background: linear-gradient(90deg, rgba(31, 55, 68, 1) 0%, rgba(30, 83, 113, 1) 100%);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 9vh;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.header .logo {
+    display: flex;
+}
+
+.logo figure {
+    margin-left: 1rem;
+}
+
+.logo figure a {
+    color: rgba(255, 255, 255, 0.0001);
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    text-decoration: none;
+}
+
+.logo figure .platzi-image {
+    padding: 1rem 0;
+    width: 5.1rem;
+    height: 2.5rem;
+    box-sizing: initial;
+    text-emphasis: none;
+}
+
+.logo figure .platzi-cover {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    border-image-repeat: stretch;
+    border: none;
+    vertical-align: bottom;
+    max-width: 100%;
+    padding: 1rem 0;
+    box-sizing: initial;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-header .actions {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    height: 3rem;
+    margin-right: 4rem;
+}
+
+.nav-header .actions .avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-header .actions .avatar .avatar-img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    left: 0;
+    padding: 5px;
+    box-sizing: initial;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.bell {}
+
+.bell figure img {
+    margin-top: .5rem;
+    width: 2rem;
+    padding: 1px;
+    margin-right: 1rem;
+}
+
+.arrow {
+    padding: 5px;
+}
+
+.arrow figure img {
+    width: 1.5rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatar span {
+    color: #fff;
+}
+
+.menu {
+    padding-right: 10px;
+}
+
+.menu span {
+    color: #fff;
+}
+
+.profilePersonal {
+    background: #f6f6f6;
+    height: 298.8rem;
+    display: flex;
+}
+
+.profilePersonal .profile-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 492px;
+    margin: 0 auto;
+    padding: 16px 15px 0px 15px;
+}
+
+.profilePersonal .profileHeader .profileHeader-picture {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 30vh;
+}
+
+.profilePersonal .profileHeader .profileHeader-picture figure img {
+    box-sizing: initial;
+    width: 13rem;
+    border-radius: 50%;
+    padding: 0rem;
+    margin-top: 2rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.profilePersonal .profileHeader .profileHeader-picture figure figcaption {
+    padding: 0;
+    margin: 0;
+}
+
+.profilePersonal .profileHeader .profileHeader-picture figure figcaption a {
+    color: #0791e6;
+    font-weight: bold;
+}
+
+.profileHeader-info .profileHeader-username {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 20vh;
+}
+
+.profileHeader-info .profileHeader-username figure {
+    display: inline-block;
+}
+
+.profileHeader-info .profileHeader-username figure img {
+    border: none;
+    vertical-align: bottom;
+    max-width: 100%;
+}
+
+.profileHeader-info .profileHeader-username .profileHeader-name {
+    color: rgb(39, 59, 71);
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 900;
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.profileHeader-info .biography-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 5vh;
+}
