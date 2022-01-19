@@ -53,6 +53,16 @@ nav .nav-right-section .menu-icon {
     height: 25px;
     width: 25px;
     cursor: pointer;
+    opacity: .6;
+}
+
+nav .nav-right-section .menu-icon:hover {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
 nav .nav-right-section img {
