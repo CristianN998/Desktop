@@ -651,6 +651,7 @@ main {
 }
 
 .plan-card__ca {
+    transition: all .2s ease-in-out;
     text-align: center;
     cursor: pointer;
     outline: none;
@@ -672,7 +673,6 @@ main {
 }
 
 .plan-card__ca:hover {
-    transition: all .2s ease-in-out;
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
