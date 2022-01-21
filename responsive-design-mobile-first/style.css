@@ -560,6 +560,15 @@ main {
     background-color: var(--bitcoin-orange);
 }
 
+::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
+
 .plans-container__card {
     margin: 50px 20px 0;
     scroll-snap-align: center;
