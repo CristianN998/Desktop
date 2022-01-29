@@ -1,0 +1,38 @@
+.container {
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    gap: 20px;
+    width: 220px;
+}
+
+.item {
+    font-size: 2rem;
+    color: white;
+}
+
+.item1 {
+    background-color: #acda0a;
+}
+
+.item2 {
+    background-color: #70bc0c;
+}
+
+.item3 {
+    background-color: #258305;
+}
+
+.item4 {
+    background-color: #acda0a;
+}
+
+.item5 {
+    background-color: #70bc0c;
+}
+
+.item6 {
+    background-color: #258305;
+}
