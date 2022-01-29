@@ -168,6 +168,8 @@
         .hero {
             grid-template-columns: minmax(300px, 500px);
             justify-content: center;
+            place-content: center;
+            text-align: center;
         }
         .hero-image {
             display: none
