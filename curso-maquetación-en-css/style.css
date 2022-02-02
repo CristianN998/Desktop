@@ -59,14 +59,13 @@ header .header-icons-container {
 }
 
 header .header-icons-container .icons {
-    width: 300px;
+    width: 320px;
     height: auto;
     display: flex;
     justify-items: flex-end;
     align-items: center;
     justify-content: space-between;
     justify-self: end;
-    margin-right: 5rem;
 }
 
 header .icons i {
@@ -211,7 +210,7 @@ nav .profile-link a {
 }
 
 .blogs-news-container {
-    background: #e6e9ed;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     padding: 0 50px 40px;
 }
 
@@ -316,6 +315,7 @@ footer p {
 
 .contact-main-container {
     width: 100%;
+    min-width: 320px;
     min-height: 250px;
     background: rgba(0, 0, 0, .1);
     text-align: center;
@@ -352,18 +352,30 @@ footer p {
 }
 
 .img-container img {
+    margin-left: -25px;
+    padding: 0 10px;
     width: 320px;
-    margin-right: 30px;
-    padding: 20px;
     border-radius: 20%;
-    -webkit-border-radius: 20%;
-    -moz-border-radius: 20%;
-    -ms-border-radius: 20%;
-    -o-border-radius: 20%;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
 }
 
 .profile-info .profile-container {
     display: flex;
+    width: 100%;
+}
+
+.profile-container .img-container {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+}
+
+.profile-container .img-container img {
+    max-width: 320px;
+    max-height: 400px;
 }
 
 .profile-main-projects {
@@ -378,7 +390,8 @@ footer p {
 
 .projects-main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .project-container {
@@ -387,11 +400,13 @@ footer p {
 }
 
 .profile-info-text h1 {
+    text-align: center;
     font-size: 3rem;
     padding: 20px 0;
 }
 
 .profile-info-text p {
+    text-align: center;
     font-size: 1.6rem;
     padding-bottom: 20px;
 }
@@ -402,10 +417,10 @@ footer p {
 
 .project-container figure img {
     width: 100%;
-    margin: 10px 0;
+    margin: 20px 0;
     box-shadow: 0 0 5px black;
 }
 
 .project-container p {
-    margin: 10px 0 20px 0;
+    margin: 20px 0;
 }
