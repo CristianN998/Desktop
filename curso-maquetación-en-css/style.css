@@ -116,6 +116,19 @@ nav .nav-logo-container {
 nav .nav-logo-container img {
     width: 100px;
     padding: 10px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+nav .nav-logo-container img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 nav .profile-link {
@@ -131,6 +144,15 @@ nav .profile-link a {
     text-decoration: none;
     font-weight: bold;
     border-bottom: 2px solid var(--black);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+nav .profile-link a:hover {
+    color: var(--white);
 }
 
 .main {
@@ -257,6 +279,15 @@ nav .profile-link a {
     text-decoration: none;
     font-size: 1.2rem;
     color: var(--black);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.blogs-button:hover {
+    font-size: 1.6rem;
 }
 
 .blogs-posts-container .post-container {
