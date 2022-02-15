@@ -64,8 +64,8 @@ body {
 .container2,
 .container3,
 .container4 {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     display: grid;
     grid-template: 1fr 1fr / repeat(2, 1fr);
     gap: 10px;
@@ -81,15 +81,16 @@ body {
 .container3:hover,
 .container4:hover {
     transform: scale(1.2);
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
+    background: var(--black-08);
 }
 
 .card1 {
@@ -110,7 +111,8 @@ body {
 .card22,
 .card333,
 .card4444 {
-    border: 10px solid red;
+    border: 5px solid red;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card111 {
@@ -165,11 +167,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     font-size: 2rem;
@@ -182,7 +184,12 @@ body {
 }
 
 .card:hover {
-    font-size: 3.6rem;
+    transform: scale(1.2);
+    font-size: 3rem;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .main-container {
