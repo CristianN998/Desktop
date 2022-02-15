@@ -31,11 +31,33 @@
 html {
     font-size: 62.5%;
     font-family: 'JetBrains Mono', monospace;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    width: 100vw;
+    height: 5vh;
+    margin: 0 auto;
+    background: var(--black-03);
+    color: var(--yellow-06);
+}
+
+footer {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    width: 100vw;
+    height: 5vh;
+    margin: 0 auto;
+    background: var(--black-03);
+    color: var(--yellow-06);
 }
 
 body {
+    text-align: center;
     background: var(--yellow-05);
-    height: 100vh;
+    height: 100%;
 }
 
 .container1,
@@ -46,6 +68,28 @@ body {
     width: 500px;
     display: grid;
     grid-template: 1fr 1fr / repeat(2, 1fr);
+    gap: 10px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.container1:hover,
+.container2:hover,
+.container3:hover,
+.container4:hover {
+    transform: scale(1.2);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .card1 {
@@ -117,19 +161,36 @@ body {
 }
 
 .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 2rem;
+    color: var(--yellow-06);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.card:hover {
+    font-size: 3.6rem;
 }
 
 .main-container {
-    margin: 0 100px;
-    height: 100vh;
+    margin: 0 auto;
+    height: 90vh;
     display: grid;
     align-items: center;
     justify-items: center;
+    place-content: center;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
