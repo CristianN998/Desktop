@@ -1,0 +1,147 @@
+                                              :root {
+                                                 /* COLOR PALETTE */
+                                                 --green-01: #066337;
+                                                 --green-02: #199458;
+                                                 --green-03: #2AB670;
+                                                 --green-04: #73CC9A;
+                                                 --green-05: #C3E9D3;
+                                                 --green-06: #E6F6ED;
+                                                 --yellow-01: #B8A739;
+                                                 --yellow-02: #C3B356;
+                                                 --yellow-03: #CEBF73;
+                                                 --yellow-04: #DDD19A;
+                                                 --yellow-05: #EBE3C1;
+                                                 --yellow-06: #F7F4E6;
+                                                 --black-01: #010101;
+                                                 --black-02: #171713;
+                                                 --black-03: #252522;
+                                                 --black-04: #57554D;
+                                                 --black-05: #4B4B49;
+                                                 --black-06: #888781;
+                                                 --black-07: #8E8E8B;
+                                                 --black-08: #B1B5B1;
+                                             }
+                                             
+                                             * {
+                                                 padding: 0;
+                                                 margin: 0;
+                                                 box-sizing: border-box;
+                                             }
+                                             
+                                             html {
+                                                 font-size: 62.5%;
+                                                 font-family: 'JetBrains Mono', monospace;
+                                             }
+                                             
+                                             body {
+                                                 background: var(--green-04);
+                                             }
+                                             
+                                             .container {
+                                                 display: grid;
+                                                 width: 400px;
+                                                 height: 400px;
+                                                 grid-template: 60px 1fr 40px / 400px;
+                                                 background: var(--green-02);
+                                                 border-radius: 20px;
+                                                 -webkit-border-radius: 20px;
+                                                 -moz-border-radius: 20px;
+                                                 -ms-border-radius: 20px;
+                                                 -o-border-radius: 20px;
+                                                 place-content: center;
+                                                 justify-items: center;
+                                                 align-items: center;
+                                             }
+                                             
+                                             .header-container {
+                                                 display: grid;
+                                                 grid-template: 30px 30px / 60px 1fr;
+                                             }
+                                             
+                                             .header-container .icon-header {
+                                                 grid-column: 1/2;
+                                                 grid-row: 1/3;
+                                                 justify-self: center;
+                                                 align-self: center;
+                                             }
+                                             
+                                             .icon-header img {
+                                                 width: 40px;
+                                                 height: 40px;
+                                                 border-radius: 50%;
+                                                 -webkit-border-radius: 50%;
+                                                 -moz-border-radius: 50%;
+                                                 -ms-border-radius: 50%;
+                                                 -o-border-radius: 50%;
+                                             }
+                                             
+                                             .title-header {
+                                                 justify-self: center;
+                                                 align-self: center;
+                                             }
+                                             
+                                             .subtitle-header {
+                                                 grid-column: 2/3;
+                                                 grid-row: 2/3;
+                                                 justify-self: center;
+                                                 align-self: center;
+                                             }
+                                             
+                                             .img-container {
+                                                 width: 400px;
+                                                 height: 300px;
+                                             }
+                                             
+                                             .img-container img {
+                                                 width: 100%;
+                                             }
+                                             
+                                             .footer a img {
+                                                 width: 25px;
+                                             }
+                                             
+                                             .footer .buttons a {
+                                                 text-decoration: none;
+                                                 color: var(--black-01);
+                                                 font-size: 2rem;
+                                                 border-radius: 4px;
+                                                 border: 1px solid var(--yellow-01);
+                                                 -webkit-border-radius: 4px;
+                                                 -moz-border-radius: 4px;
+                                                 -ms-border-radius: 4px;
+                                                 -o-border-radius: 4px;
+                                                 transition: all .2s ease-in-out;
+                                                 -webkit-transition: all .2s ease-in-out;
+                                                 -moz-transition: all .2s ease-in-out;
+                                                 -ms-transition: all .2s ease-in-out;
+                                                 -o-transition: all .2s ease-in-out;
+                                             }
+                                             
+                                             .footer .buttons a:hover {
+                                                 transform: scale(1.2);
+                                                 -webkit-transform: scale(1.2);
+                                                 -moz-transform: scale(1.2);
+                                                 -ms-transform: scale(1.2);
+                                                 -o-transform: scale(1.2);
+                                             }
+                                             
+                                             .footer {
+                                                 display: flex;
+                                                 width: 100%;
+                                                 height: 100%;
+                                                 justify-content: space-between;
+                                             }
+                                             
+                                             .center {
+                                                 width: 100vw;
+                                                 height: 100vh;
+                                                 display: grid;
+                                                 grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+                                             }
+                                             
+                                             .container {
+                                                 margin-top: 20px;
+                                                 place-self: center;
+                                                 grid-column: 2/3;
+                                                 grid-row: 1/2;
+                                             }
