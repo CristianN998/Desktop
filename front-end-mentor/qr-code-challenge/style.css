@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --white: #fff;
+    --light-gray: #d6e2f0;
+    --grayish-blue: #7b879d;
+    --dark-blue: #1f3251;
+    --font-size-reg: 400;
+    --font-size-bold: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    padding: 40px 0 0 0;
+    background: var(--white);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template: 250px 1fr 1fr / 1fr;
+    width: 340px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.container figure {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.container figure img {
+    width: 300px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.wrap {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    place-content: center;
+}
+
+.attribution {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    padding: 0 5px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.attribution a:hover {
+    background: white;
+    border-bottom: 2px solid var(--dark-blue);
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.title {
+    font-weight: var(--font-size-bold);
+    padding: 50px 20px 0 20px;
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.subtitle {
+    padding: 30px;
+    font-weight: var(--font-size-reg);
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--grayish-blue);
+}
