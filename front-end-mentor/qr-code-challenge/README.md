@@ -1,5 +1,7 @@
 # Frontend Mentor - QR code component solution
 
+A brief description of what this project does and who it's for
+
 This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -24,26 +26,10 @@ My first front-end-mentor challenge
 
 ### Screenshot
 
-[block:image]
-{
-"images": [
-{
-"image": [
-"https://files.readme.io/5d17e6a-image_2022-02-15_205330.png",
-"image_2022-02-15_205330.png",
-1876,
-952,
-"#d0def0"
-]
-}
-]
-}
-[/block]
+![](https://i.imgur.com/xZZ2PIs.png)### Links
 
-### Links
-
-- Solution URL: [Add solution URL here]https://github.com/cricadev/Desktop/tree/main/front-end-mentor/qr-code-challenge#screenshot)
-- Live Site URL: [Add live site URL here](https://cricadev.github.io/Desktop/front-end-mentor/qr-code-challenge/index.html)
+- Solution URL: [Repository](https://github.com/cricadev/Desktop/tree/main/front-end-mentor/qr-code-challenge#screenshot)
+- Live Site URL: [GitHub Pages](https://cricadev.github.io/Desktop/front-end-mentor/qr-code-challenge/index.html)
 
 ## My process
 
