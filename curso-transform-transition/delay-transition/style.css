@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: royalblue;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    background: rgb(204, 196, 183);
+    display: grid;
+    place-content: center;
+    border: 5px solid #000;
+    width: 100%;
+}
+
+.container:hover .circle {
+    transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    -moz-transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -o-transform: translateX(200px);
+}
+
+.circle {
+    font-size: 2rem;
+    display: grid;
+    place-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.circle1 {
+    background: #11999E;
+    transition: transform 1s linear;
+    -webkit-transition: transform 1s linear;
+    -moz-transition: transform 1s linear;
+    -ms-transition: transform 1s linear;
+    -o-transition: transform 1s linear;
+    transition-delay: 0.5s;
+}
+
+.circle2 {
+    background: #F7EBEC;
+    transition: transform 1s ease-in-out;
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    -ms-transition: transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    transition-delay: 1s;
+}
+
+.circle3 {
+    background: #DDBDD5;
+    transition: transform 1s ease-out;
+    -webkit-transition: transform 1s ease-out;
+    -moz-transition: transform 1s ease-out;
+    -ms-transition: transform 1s ease-out;
+    -o-transition: transform 1s ease-out;
+    transition-delay: 1.5s;
+}
+
+.circle4 {
+    background: #AC9FBB;
+    transition: transform 1s ease-in;
+    -webkit-transition: transform 1s ease-in;
+    -moz-transition: transform 1s ease-in;
+    -ms-transition: transform 1s ease-in;
+    -o-transition: transform 1s ease-in;
+    transition-delay: 2s;
+}
+
+.circle5 {
+    background: #1D1E2C;
+    transition: transform 1s linear;
+    -webkit-transition: transform 1s linear;
+    -moz-transition: transform 1s linear;
+    -ms-transition: transform 1s linear;
+    -o-transition: transform 1s linear;
+    transition-delay: 2.5s;
+    color: #fff;
+}
+
+.circle6 {
+    background: #861657;
+    transition: transform 1s linear;
+    -webkit-transition: transform 1s linear;
+    -moz-transition: transform 1s linear;
+    -ms-transition: transform 1s linear;
+    -o-transition: transform 1s linear;
+    transition-delay: 3s;
+}
+
+.circle7 {
+    background: #11999E;
+    transition: transform 1s linear;
+    -webkit-transition: transform 1s linear;
+    -moz-transition: transform 1s linear;
+    -ms-transition: transform 1s linear;
+    -o-transition: transform 1s linear;
+    transition-delay: 3.5s;
+}
+
+.circle8 {
+    background: #F7EBEC;
+    transition: transform 1s ease-in-out;
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    -ms-transition: transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    transition-delay: 4s;
+}
