@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+}
+
+a:link {
+    color: hotpink;
+}
+
+a:visited {
+    color: tomato;
+}
+
+a:hover {
+    background: palegoldenrod;
+}
+
+p:not(.cricadev) {
+    color: lightblue;
+}
+
+.container div:nth-child(1) {
+    color: lightseagreen;
+}

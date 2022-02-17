@@ -1,0 +1,275 @@
+:root {
+    --container: #BFBEBD;
+    --box1: #8C5D5D;
+    --box2: #035928;
+    --box3: #BF8892;
+    --text: #fff;
+    --background: royalblue;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+footer {
+    background: #000;
+    width: 100vw;
+    height: 10vh;
+    display: grid;
+    place-content: center;
+}
+
+footer p {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text);
+}
+
+body {
+    background: royalblue;
+}
+
+.dad {
+    font-size: 3rem;
+    background: #000;
+    padding: 20px 0;
+}
+
+h1 {
+    color: #fff;
+    padding: 20px 0 0 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+div {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    background: #BFBEBD;
+    margin: 20px 400px;
+    border: 5px solid #000;
+}
+
+.box {
+    font-size: 1.4rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: 140px;
+    height: 100px;
+    border: 5px solid #000;
+}
+
+.box1:hover {
+    transform: translate(-20px, 20px);
+    -webkit-transform: translate(-20px, 20px);
+    -moz-transform: translate(-20px, 20px);
+    -ms-transform: translate(-20px, 20px);
+    -o-transform: translate(-20px, 20px);
+}
+
+.box1,
+.box11,
+.box111,
+.box1111,
+.box11111,
+.box111111 {
+    background: #8C5D5D;
+    transition: transform .5s;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+}
+
+.box2,
+.box22,
+.box222,
+.box2222,
+.box22222,
+.box222222 {
+    background: #035928;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+
+.box2:hover {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+}
+
+.box3,
+.box33,
+.box333,
+.box3333,
+.box33333,
+.box333333 {
+    background: #BF8892;
+    transition: transform 1.5s;
+    -webkit-transition: transform 1.5s;
+    -moz-transition: transform 1.5s;
+    -ms-transition: transform 1.5s;
+    -o-transition: transform 1.5s;
+}
+
+.box44444 {
+    transition: transform 1.5s;
+    -webkit-transition: transform 1.5s;
+    -moz-transition: transform 1.5s;
+    -ms-transition: transform 1.5s;
+    -o-transition: transform 1.5s;
+}
+
+.box3:hover {
+    transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+}
+
+.box11:hover {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+
+.box22:hover {
+    transform: scaleX(1.4);
+    -webkit-transform: scaleX(1.4);
+    -moz-transform: scaleX(1.4);
+    -ms-transform: scaleX(1.4);
+    -o-transform: scaleX(1.4);
+}
+
+.box33:hover {
+    transform: scaleY(1.4);
+    -webkit-transform: scaleY(1.4);
+    -moz-transform: scaleY(1.4);
+    -ms-transform: scaleY(1.4);
+    -o-transform: scaleY(1.4);
+}
+
+.box111:hover {
+    transform: skew(40deg);
+    -webkit-transform: skew(40deg);
+    -moz-transform: skew(40deg);
+    -ms-transform: skew(40deg);
+    -o-transform: skew(40deg);
+}
+
+.box222:hover {
+    transform: skewX(40deg);
+    -webkit-transform: skewX(40deg);
+    -moz-transform: skewX(40deg);
+    -ms-transform: skewX(40deg);
+    -o-transform: skewX(40deg);
+}
+
+.box333:hover {
+    transform: skewY(40deg);
+    -webkit-transform: skewY(40deg);
+    -moz-transform: skewY(40deg);
+    -ms-transform: skewY(40deg);
+    -o-transform: skewY(40deg);
+}
+
+.box1111:hover {
+    transform: rotate(500deg);
+    -webkit-transform: rotate(500deg);
+    -moz-transform: rotate(500deg);
+    -ms-transform: rotate(500deg);
+    -o-transform: rotate(500deg);
+}
+
+.box2222:hover {
+    transform: rotateX(500deg);
+    -webkit-transform: rotateX(500deg);
+    -moz-transform: rotateX(500deg);
+    -ms-transform: rotateX(500deg);
+    -o-transform: rotateX(500deg);
+}
+
+.box3333:hover {
+    transform: rotateY(500deg);
+    -webkit-transform: rotateY(500deg);
+    -moz-transform: rotateY(500deg);
+    -ms-transform: rotateY(500deg);
+    -o-transform: rotateY(500deg);
+}
+
+.box11111:hover {
+    transform-origin: right top;
+    transform: rotate(500deg);
+}
+
+.box22222:hover {
+    transform-origin: left top;
+    transform: rotate(500deg);
+}
+
+.box33333:hover {
+    transform-origin: left bottom;
+    transform: rotate(500deg);
+}
+
+.box44444 {
+    background: #035928;
+}
+
+.box44444:hover {
+    transform-origin: right bottom;
+    transform: rotate(500deg);
+}
+
+.box111111:hover {
+    transform: matrix(3, 3, -1, 1, 80, 80);
+    -webkit-transform: matrix(3, 3, -1, 1, 80, 80);
+    -moz-transform: matrix(3, 3, -1, 1, 80, 80);
+    -ms-transform: matrix(3, 3, -1, 1, 80, 80);
+    -o-transform: matrix(3, 3, -1, 1, 80, 80);
+}
+
+.box222222:hover {
+    transform: matrix(10, 20, 1, 1, 80, 80);
+    -webkit-transform: matrix(10, 20, 1, 1, 80, 80);
+    -moz-transform: matrix(10, 20, 1, 1, 80, 80);
+    -ms-transform: matrix(10, 20, 1, 1, 80, 80);
+    -o-transform: matrix(10, 20, 1, 1, 80, 80);
+}
+
+.box333333:hover {
+    transform: matrix(1, 2, -1, 1, 80, 80);
+    -webkit-transform: matrix(1, 2, -1, 1, 80, 80);
+    -moz-transform: matrix(1, 2, -1, 1, 80, 80);
+    -ms-transform: matrix(1, 2, -1, 1, 80, 80);
+    -o-transform: matrix(1, 2, -1, 1, 80, 80);
+}
