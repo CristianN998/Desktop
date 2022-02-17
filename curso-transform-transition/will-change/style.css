@@ -1,0 +1,35 @@
+button {
+    background: palegoldenrod;
+    width: 100px;
+    height: 30px;
+}
+
+.better {
+    will-change: transform;
+    transition: transform 500ms;
+    -webkit-transition: transform 500ms;
+    -moz-transition: transform 500ms;
+    -ms-transition: transform 500ms;
+    -o-transition: transform 500ms;
+}
+
+.better:hover {
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+
+.worst {
+    will-change: transform;
+    transition: margin-top 500ms;
+    -webkit-transition: margin-top 500ms;
+    -moz-transition: margin-top 500ms;
+    -ms-transition: margin-top 500ms;
+    -o-transition: margin-top 500ms;
+}
+
+.worst:hover {
+    margin-top: 5px;
+}
