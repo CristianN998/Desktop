@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
     <title>Frontend Mentor | NFT preview card component</title>
 
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <div class="card__container">
-            <figure class="img-container">
-                <img src="images/image-equilibrium.jpg" alt="image from a etherium" />
-            </figure>
-
-            <div class="card__info-text">
-                <div>
-                    <h1>Equilibrium #3429</h1>
-                    <p>Our Equilibrium collection promotes balance and calm.</p>
-                </div>
-                <div class="card__info-value">
-                    <div class="items-wrap">
-                        <span class="img"></span>
-                        <span class="eth">0.041 ETH</span>
-                    </div>
-                    <div class="items-wrap">
-                        <span class="img-clock"></span>
-                        <span class="timestamp"> 3 days left </span>
-                    </div>
-                </div>
-                <span class="line"></span>
-            </div>
-            <div class="footer">
-                <img src="images/image-avatar.png" alt="" />
-                <span>Creation of <strong class="bold">Jules Wyvern</strong> </span>
-            </div>
+      <div class="card__container">
+        <figure class="img-container">
+          <img
+            class="imga"
+            src="images/image-equilibrium.jpg"
+            alt="image from a etherium"
+          />
+        </figure>
+        <div class="overlay">
+          <div class="overlay-span">
+            <span></span>
+          </div>
         </div>
+
+        <div class="card__info-text">
+          <div>
+            <h1>Equilibrium #3429</h1>
+            <p>Our Equilibrium collection promotes balance and calm.</p>
+          </div>
+          <div class="card__info-value">
+            <div class="items-wrap">
+              <span class="img"></span>
+              <span class="eth">0.041 ETH</span>
+            </div>
+            <div class="items-wrap">
+              <span class="img-clock"></span>
+              <span class="timestamp"> 3 days left </span>
+            </div>
+          </div>
+          <span class="line"></span>
+        </div>
+        <div class="footer">
+          <img src="images/image-avatar.png" alt="" />
+          <span>Creation of <strong class="bold">Jules Wyvern</strong> </span>
+        </div>
+      </div>
     </div>
 
     <footer class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
       >Coded by <a href="https://github.com/cricadev">Cricadev</a>
     </footer>
-</body>
-
+  </body>
 </html>
