@@ -436,8 +436,8 @@ body {
     right: 0;
     left: 0;
     z-index: 3;
-    animation: loader .2s linear forwards;
-    -webkit-animation: loader .2s linear forwards;
+    animation: loader 2s linear forwards;
+    -webkit-animation: loader 2s linear forwards;
 }
 
 .loader div {
@@ -451,8 +451,8 @@ body {
     -moz-transform: scale(0);
     -ms-transform: scale(0);
     -o-transform: scale(0);
-    animation: scaling .2s ease-in-out infinite;
-    -webkit-animation: scaling .2s ease-in-out infinite;
+    animation: scaling 2s ease-in-out infinite;
+    -webkit-animation: scaling 2s ease-in-out infinite;
 }
 
 @keyframes loader {
