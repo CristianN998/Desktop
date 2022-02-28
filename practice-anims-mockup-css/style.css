@@ -422,7 +422,7 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 3;
+    z-index: 1000;
     animation: loader 2s linear forwards;
     -webkit-animation: loader 2s linear forwards;
 }
@@ -839,7 +839,7 @@ body {
         grid-row: 3/4;
     }
     .main-content p:nth-child(3) {
-        font-size: 1.6rem;
+        font-size: 2rem;
         margin: 0;
     }
     .main-content p:nth-child(2) {
