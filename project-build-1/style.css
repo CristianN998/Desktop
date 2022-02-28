@@ -180,6 +180,7 @@ section {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    align-items: center;
 }
 
 .home__top .home__number {
@@ -225,6 +226,7 @@ section {
     font-weight: 400;
     line-height: 20px;
     word-wrap: break-word;
+    height: 100%;
 }
 
 .home__figures {
