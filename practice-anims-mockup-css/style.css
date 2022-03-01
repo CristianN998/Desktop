@@ -592,9 +592,9 @@ body {
     place-content: center;
 }
 
-#radio-1:checked~.cards #card-1,
-#radio-2:checked~.cards #card-2,
-#radio-3:checked~.cards #card-3 {
+#radio-1:checked~.team__cards #card-1,
+#radio-2:checked~.team__cards #card-2,
+#radio-3:checked~.team__cards #card-3 {
     opacity: 1;
     z-index: 6;
     transform: translateX(0) scale(1);
@@ -604,9 +604,9 @@ body {
     -o-transform: translateX(0) scale(1);
 }
 
-#radio-1:checked~.cards #card-2,
-#radio-2:checked~.cards #card-3,
-#radio-3:checked~.cards #card-1 {
+#radio-1:checked~.team__cards #card-2,
+#radio-2:checked~.team__cards #card-3,
+#radio-3:checked~.team__cards #card-1 {
     opacity: 0.5;
     z-index: 1;
     transform: translateX(40%) scale(0.8);
@@ -616,9 +616,9 @@ body {
     -o-transform: translateX(40%) scale(0.8);
 }
 
-#radio-1:checked~.cards #card-3,
-#radio-2:checked~.cards #card-1,
-#radio-3:checked~.cards #card-2 {
+#radio-1:checked~.team__cards #card-3,
+#radio-2:checked~.team__cards #card-1,
+#radio-3:checked~.team__cards #card-2 {
     opacity: 0.5;
     z-index: 1;
     transform: translateX(-40%) scale(0.8);
