@@ -93,7 +93,7 @@ function changeBg() {
     container.style.backgroundPosition = "center";
     container.style.backgroundSize = "center";
 }
-setInterval(changeBg, 2000);
+setInterval(changeBg, 5000);
 
 navbarLinks.style.transition = "all 1s ease-in-out";
 toggleButton.addEventListener("click", () => {

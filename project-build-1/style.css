@@ -33,8 +33,10 @@ html {
 }
 
 header {
-    position: sticky;
+    position: fixed;
+    z-index: 10;
     top: 0;
+    width: 100vw;
     background: var(--navbar);
     overflow: hidden;
 }
@@ -42,6 +44,8 @@ header {
 .nav {
     background: transparent;
     display: flex;
+    width: 100vw;
+    height: 100%;
     flex-direction: column;
     align-items: flex-start;
     color: var(--white-base);
@@ -207,8 +211,8 @@ section {
     margin-left: 10px;
     font-size: 9rem;
     font-weight: 700;
-    line-height: 100px;
-    width: 75%;
+    line-height: 10rem;
+    width: 60%;
     word-wrap: break-word;
     background: var(--gradient-letter-home);
     -webkit-background-clip: text;
@@ -231,54 +235,45 @@ section {
 
 .home__figures {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    justify-content: center;
     grid-column: 2/3;
     grid-row: 2/4;
     display: grid;
-    grid-template: 100% / repeat(3, minmax(30px, 100px));
+    grid-template: 100% / repeat(3, minmax(30px, 150px));
     place-items: center;
 }
 
-.square-01 {
+.square {
+    z-index: 2;
+    position: relative;
     width: 50px;
-    height: 300px;
-    background-image: url("https://i.ibb.co/DCy1Nz0/fondo-no-blur-1.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.square-01 {
+    margin-top: 200px;
+    height: 306px;
+    background-image: url("https://i.ibb.co/DCy1Nz0/fondo-no-blur-1.png");
 }
 
 .square-02 {
-    width: 50px;
-    height: 500px;
+    margin-bottom: 200px;
+    height: 510px;
     background-image: url("https://i.ibb.co/gwcpd5T/fondo-no-blur.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
 
 .square-03 {
-    width: 50px;
-    height: 440px;
+    margin-top: 200px;
+    height: 447px;
     background-image: url("https://i.ibb.co/H7RbWGr/fondo-no-blur-3.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
 
 .home__scroll {
@@ -292,6 +287,7 @@ section {
 
 .home__scroll img {
     position: absolute;
+    z-index: 2;
     bottom: 10px;
     left: 0;
     right: 0;
@@ -431,11 +427,6 @@ section {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
 }
 
 .scroll img {
@@ -465,24 +456,50 @@ section {
     background: var(--gradient-base);
 }
 
+.contact__main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
 .contact__main .img-container img {
-    height: 60vh;
+    position: relative;
+    height: 80vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.contact__main .main__text {
-    text-align: center;
+.contact__main .img-container {
     position: relative;
-    bottom: 300px;
+}
+
+.contact__main .background {
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    bottom: -5px;
+    background: var(--gradient-base);
+    filter: blur(4px);
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-filter: blur(4px);
+}
+
+.contact__main .main__text {
+    position: absolute;
+    bottom: 20px;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 80%;
+    text-align: center;
     display: grid;
     grid-template: repeat(2, 50%), 100%;
-    gap: 50px;
+    gap: 0;
 }
 
 .main__text .main__title {
@@ -506,6 +523,7 @@ section {
 .contact__team {
     margin-top: 100px;
     height: 100vh;
+    width: 100%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 30% 70%;
@@ -925,13 +943,149 @@ section {
         flex-direction: row;
     }
     .nav .nav__links ul li a {
+        font-size: 2.5rem;
         padding: 1rem 2rem 1rem 2rem;
         text-decoration: none;
         color: var(--white-base);
         display: block;
     }
+    .home__top .home__number {
+        font-size: 10rem;
+        line-height: 10rem;
+        width: 10%;
+    }
     .contact__main .img-container img {
+        height: 100vh;
+    }
+    .gallery__container .card img {
+        width: 70px;
+        height: 70px;
+    }
+    .gallery__container .card h3 {
+        font-size: 5rem;
+    }
+    .square {
+        width: 100px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    .square-01 {
+        height: 472px;
+    }
+    .square-02 {
+        height: 784px;
+    }
+    .square-03 {
+        height: 688px;
+    }
+    .home__title h1 {
+        font-size: 18rem;
+        line-height: 20rem;
+    }
+    .home__subtitle p {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+    .gallery__title h2 {
+        font-size: 7rem;
+    }
+    .gallery__container {
+        width: 80%;
+    }
+    .gallery__container .card {
+        height: 600px;
+    }
+    .scroll img {
+        width: 42px;
+        height: 42px;
+    }
+    .footer img {
+        width: 65px;
+        height: 45px;
+    }
+    .footer {
+        height: 50px;
+    }
+}
+
+@media (min-width: 900px) {
+    .contact__main .img-container img {
+        height: 100vh;
         width: 100%;
-        height: 100%;
+    }
+    .square {
+        border-radius: 30px;
+    }
+    .square-01 {
+        height: 412px;
+    }
+    .square-02 {
+        height: 684px;
+    }
+    .square-03 {
+        height: 600px;
+    }
+    .home__title h1 {
+        font-size: 20rem;
+        line-height: 21rem;
+    }
+    .home__subtitle p {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+    .nav .nav__links ul li a {
+        font-size: 3rem;
+    }
+    .gallery__container {
+        width: 60%;
+    }
+    .gallery__container .card {
+        height: 600px;
+    }
+    .scroll img {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+@media (min-width:2000px) {
+    .home__top .home__number {
+        font-size: 15rem;
+        line-height: 15rem;
+        width: 10%;
+    }
+    .home__title h1 {
+        font-size: 30rem;
+        line-height: 31rem;
+    }
+    .home__subtitle p {
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+    .square {
+        width: 150px;
+    }
+    .home__figures {
+        grid-template: 100% / repeat(3, minmax(30px, 200px));
+    }
+    .gallery__container {
+        width: 60%;
+    }
+    .gallery__container .card {
+        height: 900px;
+    }
+    .scroll img {
+        width: 72px;
+        height: 72px;
+    }
+    .footer img {
+        width: 85px;
+        height: 65px;
+    }
+    .footer {
+        height: 70px;
     }
 }
