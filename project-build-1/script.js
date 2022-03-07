@@ -62,13 +62,17 @@ function firstPage() {
     square03.style.backgroundSize = "cover";
     square03.style.backgroundPosition = "center";
 }
-setInterval(nextPage, 4999);
-setInterval(firstPage, 10000);
+var homePage = document.getElementById("first");
+if (homePage) {
+    setInterval(nextPage, 4999);
+    setInterval(firstPage, 10000);
+}
 
 panels.forEach((panel) => {
     panel.addEventListener("click", () => {
         removeActiveClasses();
         panel.classList.add("active");
+        panel.setAttribute("id", "expand");
     });
 });
 
@@ -93,11 +97,13 @@ function changeBg() {
     container.style.backgroundPosition = "center";
     container.style.backgroundSize = "center";
 }
-setInterval(changeBg, 5000);
 
+if (homePage) {
+    setInterval(changeBg, 5000);
+}
 navbarLinks.style.transition = "all 1s ease-in-out";
 toggleButton.addEventListener("click", () => {
     console.log("clicked");
-    navbarLinks.classList.toggle("active");
+    navbarLinks.classList.toggle("actived");
     toggleButton.classList.toggle("open");
 });

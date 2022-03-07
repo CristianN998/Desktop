@@ -62,7 +62,7 @@ header {
     width: 100%;
 }
 
-.nav__links.active {
+.nav__links.actived {
     display: flex;
     animation-name: nav-links;
     animation-duration: .8s;
@@ -755,7 +755,7 @@ section {
 .about__text {
     width: 100%;
     height: 100vh;
-    background-image: url("https://i.ibb.co/qjrWgqg/contact-bg.jpg");
+    background-image: url("https://i.ibb.co/GCFtGNM/Cont-ctanos-desktop.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1079,6 +1079,32 @@ section {
     .contact__team {
         margin-top: 200px;
     }
+    /* CONTACT US PAGE */
+    .about__text p {
+        font-size: 6.5rem;
+        line-height: 7rem;
+    }
+    .about__text h3 {
+        font-size: 5.5rem;
+    }
+    .about__text img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+    .contact__card-container img {
+        width: 80px;
+        padding: 20px;
+    }
+    .wrap-text p:nth-child(1) {
+        font-size: 3.2rem;
+    }
+    .wrap-text p:nth-child(2) {
+        font-size: 2.2rem;
+    }
+    .contact__card-container {
+        margin-left: calc(50% - 140px);
+        gap: 30px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -1171,6 +1197,32 @@ section {
     }
     .contact__location {
         margin-top: 600px;
+    }
+    /* CONTACT US PAGE */
+    .about__text p {
+        font-size: 7rem;
+        line-height: 7rem;
+    }
+    .about__text h3 {
+        font-size: 6rem;
+    }
+    .about__text img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+    .contact__card-container img {
+        width: 80px;
+        padding: 20px;
+    }
+    .wrap-text p:nth-child(1) {
+        font-size: 3.5rem;
+    }
+    .wrap-text p:nth-child(2) {
+        font-size: 2.5rem;
+    }
+    .contact__card-container {
+        margin-left: calc(50% - 160px);
+        gap: 40px;
     }
 }
 
@@ -1291,5 +1343,31 @@ section {
     }
     .contact__location {
         margin-top: 800px;
+    }
+    /* CONTACT US PAGE */
+    .about__text p {
+        font-size: 10.5rem;
+        line-height: 11rem;
+    }
+    .about__text h3 {
+        font-size: 8rem;
+    }
+    .about__text img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .contact__card-container img {
+        width: 140px;
+        padding: 20px;
+    }
+    .wrap-text p:nth-child(1) {
+        font-size: 5.2rem;
+    }
+    .wrap-text p:nth-child(2) {
+        font-size: 4.2rem;
+    }
+    .contact__card-container {
+        margin-left: calc(50% - 140px);
+        gap: 60px;
     }
 }
