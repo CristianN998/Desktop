@@ -825,6 +825,7 @@ section {
 
 .contact__card-container img {
     width: 60px;
+    height: 60px;
     padding: 20px;
     background: var(--red);
     border-radius: 20%;
@@ -1093,6 +1094,7 @@ section {
     }
     .contact__card-container img {
         width: 80px;
+        height: 80px;
         padding: 20px;
     }
     .wrap-text p:nth-child(1) {
@@ -1212,6 +1214,7 @@ section {
     }
     .contact__card-container img {
         width: 80px;
+        height: 80px;
         padding: 20px;
     }
     .wrap-text p:nth-child(1) {
@@ -1358,6 +1361,7 @@ section {
     }
     .contact__card-container img {
         width: 140px;
+        height: 140px;
         padding: 20px;
     }
     .wrap-text p:nth-child(1) {
