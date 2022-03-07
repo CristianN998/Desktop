@@ -651,6 +651,10 @@ section {
 
 .team__cards img {
     width: 140px;
+    height: 140px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 20%;
     -webkit-border-radius: 20%;
     -moz-border-radius: 20%;
@@ -1064,6 +1068,7 @@ section {
     }
     .team__cards img {
         width: 340px;
+        height: 340px;
     }
     .team-card h3 {
         font-size: 3.2rem;
@@ -1187,6 +1192,7 @@ section {
     }
     .team__cards img {
         width: 440px;
+        height: 440px;
     }
     .team-card h3 {
         font-size: 4rem;
@@ -1334,6 +1340,7 @@ section {
     }
     .team__cards img {
         width: 640px;
+        height: 640px;
     }
     .team-card h3 {
         font-size: 4rem;
