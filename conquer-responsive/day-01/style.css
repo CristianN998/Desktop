@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.parent {
+    background-color: blueviolet;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.child {
+    background-color: aqua;
+    width: 50%;
+}
