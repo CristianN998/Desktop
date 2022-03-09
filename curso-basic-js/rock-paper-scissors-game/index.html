@@ -11,36 +11,57 @@
 </head>
 
 <body>
-    <nav>
-        <a href=""><img src="https://i.ibb.co/hLMy38D/logocricadev.png" alt="cricadev logo" /></a>
-        <div class="menu">
-            <div class="bar-1"></div>
-            <div class="bar-2"></div>
-            <div class="bar-3"></div>
-        </div>
-    </nav>
-
+    <header>
+        <nav class="navbar">
+            <a href=""><img src="https://i.ibb.co/hLMy38D/logocricadev.png" alt="cricadev logo" /></a>
+            <div class="navbar__toggle">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+            <div class="nav__links">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="">BLOG</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
-        <section>
+        <section class="card__content">
             <h1>ROCK PAPER SCISSORS</h1>
-            <p>VS</p>
             <div class="cards-wrapper">
-                <div class="card-container">
+                <div class="card-container card-container-1">
                     <div class="card__icon">
-                        <div class="card__img--over"></div>
+                        <img class="img-flag" src="https://flagicons.lipis.dev/flags/4x3/co.svg" alt="Colombia flag" />
+                        <div class="card__img--over">
+                            <img src="https://svgur.com/i/f25.svg" alt="" />
+                        </div>
                     </div>
                     <h2 class="card__title">YOU</h2>
                     <p class="card__subtitle">1</p>
                 </div>
-                <div class="card-container">
+                <p class="content__subtitle">VS</p>
+
+                <div class="card-container card-container-2">
                     <div class="card__icon">
-                        <div class="card__img--over"></div>
+                        <img class="img-flag" src="https://flagicons.lipis.dev/flags/4x3/ar.svg" alt="Argentina flag" />
+                        <div class="card__img--over">
+                            <img src="https://svgur.com/i/f12.svg" alt="" />
+                        </div>
                     </div>
                     <h2 class="card__title">CPU</h2>
                     <p class="card__subtitle">0</p>
                 </div>
             </div>
-            <p>YOU WON!</p>
+            <p class="win__text">YOU WON!</p>
         </section>
         <section>
             <div class="table-container">
@@ -55,13 +76,13 @@
     <footer>
         <div class="icons-container">
             <div class="icon-1">
-                <a href=""><img src="" alt="" /></a>
+                <a href=""><img src="https://svgur.com/i/f0i.svg" alt="github logo" /></a>
             </div>
             <div class="icon-2">
-                <a href=""><img src="" alt="" /></a>
+                <a href=""><img src="https://svgur.com/i/f1S.svg" alt="linkedin logo" /></a>
             </div>
             <div class="icon-3">
-                <a href=""><img src="" alt="" /></a>
+                <a href=""><img src="https://svgur.com/i/f0j.svg" alt="whatsapp logo" /></a>
             </div>
         </div>
     </footer>
