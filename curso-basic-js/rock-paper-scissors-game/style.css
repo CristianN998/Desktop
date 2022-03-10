@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -35,10 +35,21 @@ body {
     border-bottom: 2px solid var(--black);
 }
 
+.navbar .text-img {
+    display: none;
+}
+
 .navbar img {
     width: 35px;
-    height: 35px;
-    margin: 0 20px;
+    height: 40px;
+    background: var(--black);
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-left: 20px;
 }
 
 .navbar .navbar__toggle {
@@ -151,7 +162,6 @@ body {
     padding: .5rem .5rem;
     display: block;
     text-shadow: 2px 2px var(--black);
-    s
 }
 
 .navbar .nav__links ul li:hover {
@@ -167,12 +177,15 @@ main {
     width: 100%;
     height: 60%;
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 20% 70% 10%;
     grid-template-columns: 100%;
+    place-items: center;
     position: relative;
 }
 
 .card__content h1 {
+    font-weight: 900;
+    margin-top: 20px;
     font-size: 3.6rem;
     text-align: center;
     -webkit-text-stroke: 2px var(--black);
@@ -192,35 +205,29 @@ main {
     margin-bottom: 50px;
 }
 
-
-/*  */
+.win__text {
+    display: none;
+}
 
 .win__text {
-    /*  */
-    /*  */
     font-size: 3.6rem;
-    /*  */
-    /*  */
     font-weight: 700;
-    /*  */
-    /*  */
     text-align: center;
-    /*  */
-    /*  */
     -webkit-text-stroke: 1.5px var(--black);
-    /*  */
-    /*  */
     text-shadow: 2px 2px var(--black);
     -webkit-text-fill-color: var(--aquamarine);
-    /*  */
-    /*  */
-    /*  */
-    /*  */
     position: absolute;
-    bottom: 20px;
+    bottom: 80px;
     left: 0;
     right: 0;
     margin: 0 auto;
+    background: var(--blue);
+    width: 80%;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
 }
 
 .cards-wrapper {
@@ -233,11 +240,13 @@ main {
 }
 
 .card-container {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 
 .card-container .card__title,
@@ -297,12 +306,62 @@ main {
     width: 80px;
 }
 
+.buttons-container {
+    width: 100vw;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons-container .button {
+    text-transform: uppercase;
+    border: none;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    text-align: center;
+    background: var(--blue);
+    font-weight: 900;
+    -webkit-text-stroke: 1px var(--black);
+    -webkit-text-fill-color: var(--aquamarine);
+    width: 90px;
+    height: 25px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 1.6rem;
+}
+
+.buttons-container .button-main {
+    text-transform: uppercase;
+    font-size: 2rem;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    width: 120px;
+    height: 30px;
+    font-weight: 900;
+    -webkit-text-stroke: 1.2px var(--black);
+    -webkit-text-fill-color: var(--aquamarine);
+    background: rgb(79, 211, 196);
+    background: -moz-linear-gradient(173deg, rgba(79, 211, 196, 1) 0%, rgba(83, 62, 133, 1) 100%);
+    background: -webkit-linear-gradient(173deg, rgba(79, 211, 196, 1) 0%, rgba(83, 62, 133, 1) 100%);
+    background: linear-gradient(173deg, rgba(79, 211, 196, 1) 0%, rgba(83, 62, 133, 1) 100%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 .table-container {
     width: 100%;
     height: 40vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3, 20%);
+    grid-template-rows: repeat(4, 25%);
     background-color: var(--blue);
     place-items: center;
     font-size: 2.4rem;
@@ -320,6 +379,8 @@ main {
     height: 100%;
     border-bottom: 2px solid var(--black);
     border-top: 2px solid var(--black);
+    display: grid;
+    place-items: center;
 }
 
 .table-container .table__player-1 {
@@ -329,6 +390,8 @@ main {
     width: 100%;
     height: 100%;
     border-bottom: 2px solid var(--black);
+    display: grid;
+    place-items: center;
 }
 
 .table-container .table__player-2 {
@@ -338,6 +401,8 @@ main {
     width: 100%;
     height: 100%;
     border-bottom: 2px solid var(--black);
+    display: grid;
+    place-items: center;
 }
 
 .table-container .table__score-1 {
@@ -347,6 +412,8 @@ main {
     grid-row: 3/4;
     grid-column: 1/2;
     border-bottom: 2px solid var(--black);
+    display: grid;
+    place-items: center;
 }
 
 .table-container .table__score-2 {
@@ -356,18 +423,171 @@ main {
     grid-row: 3/4;
     grid-column: 2/3;
     border-bottom: 2px solid var(--black);
+    display: grid;
+    place-items: center;
+}
+
+.table-container .table__score-3 {
+    background: var(--light-blue);
+    width: 100%;
+    height: 100%;
+    grid-row: 4/5;
+    grid-column: 1/2;
+    border-bottom: 2px solid var(--black);
+    display: grid;
+    place-items: center;
+}
+
+.table-container .table__score-4 {
+    background: var(--light-blue);
+    width: 100%;
+    height: 100%;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    border-bottom: 2px solid var(--black);
+    display: grid;
+    place-items: center;
+}
+
+footer {
+    height: 100%;
 }
 
 footer .icons-container {
+    height: 100%;
     width: 100%;
     background: var(--blue);
-    position: absolute;
-    bottom: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     border-bottom: 2px solid var(--black);
 }
 
 footer img {
-    padding: 0 10px;
+    width: 80px;
+    padding: 5px 20px;
+}
+
+@media (min-width: 600px) {
+    .navbar .navbar__toggle {
+        display: none;
+    }
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 4px solid var(--black);
+    }
+    .navbar img {
+        width: 45px;
+        height: 50px;
+        background: var(--black);
+        padding: 10px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .navbar .text-img {
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        background: var(--black);
+        padding: 10px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .navbar .nav__links {
+        display: flex;
+        width: 100%;
+    }
+    .navbar .nav__links ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        flex-direction: row;
+    }
+    .navbar .nav__links ul li a {
+        font-size: 2.6rem;
+        padding: .5rem 3rem;
+    }
+    .card__content h1 {
+        font-size: 5.4rem;
+        width: 80%;
+        margin-top: 60px;
+    }
+    .card__content .content__subtitle {
+        font-size: 5.6rem;
+    }
+    .card-container {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+    .card-container .card__icon {
+        width: 200px;
+        height: 200px;
+    }
+    .card-container .card__icon .img-flag {
+        width: 260px;
+    }
+    .buttons-container .button-main {
+        width: 220px;
+        height: 40px;
+        font-size: 2.8rem;
+    }
+    .buttons-container .button {
+        width: 180px;
+        height: 40px;
+        font-size: 2.9rem;
+    }
+    .card-container .card__title,
+    .card-container .card__subtitle {
+        font-size: 2.8rem;
+        font-weight: 900;
+    }
+    .table-container {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .navbar .nav__links ul li a {
+        font-size: 3.4rem;
+        padding: .5rem 3rem;
+    }
+    .card__content h1 {
+        font-size: 6.4rem;
+        margin-top: 60px;
+    }
+    .card__content .content__subtitle {
+        font-size: 8.6rem;
+    }
+    .card-container .card__icon {
+        width: 300px;
+        height: 300px;
+    }
+    .card-container .card__icon .img-flag {
+        width: 400px;
+    }
+    .buttons-container .button-main {
+        width: 280px;
+        height: 50px;
+        font-size: 3.6rem;
+    }
+    .buttons-container .button {
+        width: 240px;
+        height: 50px;
+        font-size: 3.6rem;
+    }
+    .card-container .card__title,
+    .card-container .card__subtitle {
+        font-size: 3.6rem;
+        font-weight: 900;
+    }
+    .table-container {
+        font-size: 4rem;
+    }
 }
