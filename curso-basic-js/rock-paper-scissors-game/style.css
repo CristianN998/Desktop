@@ -356,6 +356,54 @@ main {
 
 .card-container .card__icon .card__img--over img {
     width: 80px;
+    transform: scale(1) rotate(0);
+    -webkit-transform: scale(1) rotate(0);
+    -moz-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    -o-transform: scale(1) rotate(0);
+    animation-name: choose_hover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.card-container .card__icon .card__img--over img:hover {}
+
+@keyframes choose_hover {
+    0% {
+        transform: scale(1) rotate(0);
+        -webkit-transform: scale(1) rotate(0);
+        -moz-transform: scale(1) rotate(0);
+        -ms-transform: scale(1) rotate(0);
+        -o-transform: scale(1) rotate(0);
+    }
+    25% {
+        transform: scale(1.2) rotate(15deg);
+        -webkit-transform: scale(1.2) rotate(15deg);
+        -moz-transform: scale(1.2) rotate(15deg);
+        -ms-transform: scale(1.2) rotate(15deg);
+        -o-transform: scale(1.2) rotate(15deg);
+    }
+    50% {
+        transform: scale(1) rotate(0);
+        -webkit-transform: scale(1) rotate(0);
+        -moz-transform: scale(1) rotate(0);
+        -ms-transform: scale(1) rotate(0);
+        -o-transform: scale(1) rotate(0);
+    }
+    75% {
+        transform: scale(1.2) rotate(-15deg);
+        -webkit-transform: scale(1.2) rotate(-15deg);
+        -moz-transform: scale(1.2) rotate(-15deg);
+        -ms-transform: scale(1.2) rotate(-15deg);
+        -o-transform: scale(1.2) rotate(-15deg);
+    }
+    100% {
+        transform: scale(1) rotate(0);
+        -webkit-transform: scale(1) rotate(0);
+        -moz-transform: scale(1) rotate(0);
+        -ms-transform: scale(1) rotate(0);
+        -o-transform: scale(1) rotate(0);
+    }
 }
 
 .buttons-container {
@@ -417,6 +465,10 @@ main {
     -moz-transition: transform .2s ease-in-out;
     -ms-transition: transform .2s ease-in-out;
     -o-transition: transform .2s ease-in-out;
+}
+
+.buttons-container .button-main.disabled {
+    pointer-events: none;
 }
 
 .buttons-container .button-main:hover {
@@ -593,6 +645,82 @@ main {
     transition: background .4s ease-in-out;
 }
 
+.alert {
+    display: none;
+}
+
+.alert.error {
+    border-radius: 10px;
+    font-size: 1rem;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    position: absolute;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.alert.valid {
+    border-radius: 10px;
+    font-size: 1rem;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    position: absolute;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #07aa46;
+}
+
+.alert.draw {
+    border-radius: 10px;
+    font-size: 1rem;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    position: absolute;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #a8aa06;
+}
+
+.alert small {
+    font-size: .6rem;
+}
+
+.closebtn {
+    margin-left: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
 footer {
     height: 100%;
 }
@@ -695,6 +823,15 @@ footer img {
     .table-container {
         font-size: 3rem;
     }
+    .alert.error {
+        font-size: 2rem;
+    }
+    .alert.valid {
+        font-size: 2rem;
+    }
+    .alert.draw {
+        font-size: 2rem;
+    }
 }
 
 @media (min-width: 900px) {
@@ -733,5 +870,14 @@ footer img {
     }
     .table-container {
         font-size: 4.01rem;
+    }
+    .alert.error {
+        font-size: 3rem;
+    }
+    .alert.valid {
+        font-size: 3rem;
+    }
+    .alert.draw {
+        font-size: 3rem;
     }
 }

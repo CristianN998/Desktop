@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <h2 class="card__title">YOU</h2>
-                    <p class="card__subtitle">1</p>
+                    <p class="card__subtitle" id="player-score">0</p>
                 </div>
                 <p class="content__subtitle">VS</p>
 
@@ -62,14 +62,21 @@
                         </div>
                     </div>
                     <h2 class="card__title">CPU</h2>
-                    <p class="card__subtitle">0</p>
+                    <p class="card__subtitle" id="cpu-score">0</p>
                 </div>
             </div>
             <p class="win__text">YOU WON!</p>
             <div class="buttons-container">
-                <input class="button" value="ROCK" type="text" />
-                <button class="button-main">PLAY</button>
-                <input class="button" value="SCISSORS" type="text" readonly />
+                <input class="button" type="text" id="player-chose" value="" />
+                <button class="button-main" id="play-button">PLAY</button>
+                <input class="button" id="cpu-chose" type="text" readonly />
+            </div>
+            <div class="alert" id="alert">
+                <span id="close-button" class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span
+          >
+          <strong id="alert-title">ERROR!</strong>
+          <span id="alert-text">PLEASE TYPE A VALID CHOICE</span>
+                <small>press "X" to close the alert box</small>
             </div>
         </section>
         <section>
