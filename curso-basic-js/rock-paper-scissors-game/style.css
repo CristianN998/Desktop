@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
- :root {
+:root {
     /* COLOR PALLETTE  */
     --blue: #488FB1;
     --light-blue: #4C6F9F;
@@ -50,6 +50,24 @@ body {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     margin-left: 20px;
+    transition: transform .5s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -ms-transition: transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
+}
+
+.navbar img:hover {
+    transition: transform .2s ease-in-out;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transition: transform .2s ease-in-out;
+    -moz-transition: transform .2s ease-in-out;
+    -ms-transition: transform .2s ease-in-out;
+    -o-transition: transform .2s ease-in-out;
 }
 
 .navbar .navbar__toggle {
@@ -151,6 +169,11 @@ body {
 .navbar .nav__links ul li {
     list-style: none;
     text-align: center;
+    transition: background .4s ease-in-out;
+    -webkit-transition: background .4s ease-in-out;
+    -moz-transition: background .4s ease-in-out;
+    -ms-transition: background .4s ease-in-out;
+    -o-transition: background .4s ease-in-out;
 }
 
 .navbar .nav__links ul li a {
@@ -166,6 +189,16 @@ body {
 
 .navbar .nav__links ul li:hover {
     background-color: var(--purple);
+    transition: background .2s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    -ms-transition: background .2s ease-in-out;
+    -o-transition: background .2s ease-in-out;
+}
+
+.navbar .nav__links ul li:active {
+    background-color: var(--green);
+    transition: background .2s ease-in-out;
 }
 
 main {
@@ -191,6 +224,20 @@ main {
     -webkit-text-stroke: 2px var(--black);
     -webkit-text-fill-color: var(--aquamarine);
     text-shadow: 2px 2px var(--black);
+    transition: border .4s ease-in-out;
+    -webkit-transition: border .4s ease-in-out;
+    -moz-transition: border .4s ease-in-out;
+    -ms-transition: border .4s ease-in-out;
+    -o-transition: border .4s ease-in-out;
+}
+
+.card__content h1:hover {
+    border-bottom: 2px solid var(--blue);
+    transition: border .2s ease-in-out;
+    -webkit-transition: border .2s ease-in-out;
+    -moz-transition: border .2s ease-in-out;
+    -ms-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
 }
 
 .card__content .content__subtitle {
@@ -203,6 +250,11 @@ main {
     -webkit-text-fill-color: var(--aquamarine);
     text-shadow: 2px 2px var(--black);
     margin-bottom: 50px;
+}
+
+.card__content .content__subtitle:hover {
+    border-bottom: 2px solid var(--blue);
+    transition: border .2s ease-in-out;
 }
 
 .win__text {
@@ -354,6 +406,64 @@ main {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    transition: transform .4s ease-in-out;
+    -webkit-transition: transform .4s ease-in-out;
+    -moz-transition: transform .4s ease-in-out;
+    -ms-transition: transform .4s ease-in-out;
+    -o-transition: transform .4s ease-in-out;
+    animation-name: button-main;
+    animation-duration: 1s;
+    -webkit-transition: transform .2s ease-in-out;
+    -moz-transition: transform .2s ease-in-out;
+    -ms-transition: transform .2s ease-in-out;
+    -o-transition: transform .2s ease-in-out;
+}
+
+.buttons-container .button-main:hover {
+    transform: scale(1.2);
+    transition: transform .2s ease-in-out;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.buttons-container .button-main:active {
+    background: var(--green);
+}
+
+@keyframes button-main {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .table-container {
@@ -381,6 +491,34 @@ main {
     border-top: 2px solid var(--black);
     display: grid;
     place-items: center;
+    transition: background .4s ease-in-out;
+    -webkit-transition: background .4s ease-in-out;
+    -moz-transition: background .4s ease-in-out;
+    -ms-transition: background .4s ease-in-out;
+    -o-transition: background .4s ease-in-out;
+}
+
+.table-container .table__title:hover {
+    background: var(--purple);
+    transition: background .2s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    -ms-transition: background .2s ease-in-out;
+    -o-transition: background .2s ease-in-out;
+}
+
+.table-container .table__player-1:hover,
+.table-container .table__player-2:hover,
+.table-container .table__score-1:hover,
+.table-container .table__score-2:hover,
+.table-container .table__score-3:hover,
+.table-container .table__score-4:hover {
+    background: var(--purple);
+    transition: background .2s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    -ms-transition: background .2s ease-in-out;
+    -o-transition: background .2s ease-in-out;
 }
 
 .table-container .table__player-1 {
@@ -392,6 +530,7 @@ main {
     border-bottom: 2px solid var(--black);
     display: grid;
     place-items: center;
+    transition: background .4s ease-in-out;
 }
 
 .table-container .table__player-2 {
@@ -403,6 +542,7 @@ main {
     border-bottom: 2px solid var(--black);
     display: grid;
     place-items: center;
+    transition: background .4s ease-in-out;
 }
 
 .table-container .table__score-1 {
@@ -414,6 +554,7 @@ main {
     border-bottom: 2px solid var(--black);
     display: grid;
     place-items: center;
+    transition: background .4s ease-in-out;
 }
 
 .table-container .table__score-2 {
@@ -425,6 +566,7 @@ main {
     border-bottom: 2px solid var(--black);
     display: grid;
     place-items: center;
+    transition: background .4s ease-in-out;
 }
 
 .table-container .table__score-3 {
@@ -436,6 +578,7 @@ main {
     border-bottom: 2px solid var(--black);
     display: grid;
     place-items: center;
+    transition: background .4s ease-in-out;
 }
 
 .table-container .table__score-4 {
@@ -447,6 +590,7 @@ main {
     border-bottom: 2px solid var(--black);
     display: grid;
     place-items: center;
+    transition: background .4s ease-in-out;
 }
 
 footer {
