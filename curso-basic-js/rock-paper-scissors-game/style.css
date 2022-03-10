@@ -740,6 +740,20 @@ footer img {
     padding: 5px 20px;
 }
 
+footer p {
+    width: 100vw;
+    font-size: 2rem;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
 @media (min-width: 600px) {
     .navbar .navbar__toggle {
         display: none;
@@ -832,6 +846,9 @@ footer img {
     .alert.draw {
         font-size: 2rem;
     }
+    .card-container .card__icon .card__img--over img {
+        width: 100px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -879,5 +896,8 @@ footer img {
     }
     .alert.draw {
         font-size: 3rem;
+    }
+    .card-container .card__icon .card__img--over img {
+        width: 120px;
     }
 }

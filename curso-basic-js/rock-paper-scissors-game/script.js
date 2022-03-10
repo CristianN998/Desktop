@@ -7,6 +7,8 @@ toggleButton.addEventListener("click", () => {
     navbarLinks.classList.toggle("actived");
     toggleButton.classList.toggle("open");
 });
+var playerImg = document.getElementById("player-img");
+var cpuImg = document.getElementById("cpu-img");
 const closeButton = document.getElementById("close-button");
 const playButton = document.getElementById("play-button");
 var playerText = document.getElementById("player-chose");
@@ -20,12 +22,12 @@ var pointsCpu = 0;
 var pointsPlayer = 0;
 
 var choseImg = [
-    "url('https://svgur.com/i/f1r.svg')",
-    "url('https://svgur.com/i/f2o.svg')",
-    "url('https://svgur.com/i/f2M.svg')",
-    "url('https://svgur.com/i/f2N.svg')",
-    "url('https://svgur.com/i/f3F.svg')",
-    "url('https://svgur.com/i/f2g.svg')",
+    "https://svgur.com/i/f1r.svg",
+    "https://svgur.com/i/f2o.svg",
+    "https://svgur.com/i/f2M.svg",
+    "https://svgur.com/i/f2N.svg",
+    "https://svgur.com/i/f3F.svg",
+    "https://svgur.com/i/f2g.svg",
 ];
 
 playButton.addEventListener("click", startGame);
@@ -38,7 +40,6 @@ function startGame() {
     var cpu = choseCPU[Math.floor(Math.random() * choseCPU.length)];
     var player = playerText.value.toUpperCase();
     cpuText.value = cpu;
-    console.log(cpu);
     console.log(player);
 
     switch (true) {
@@ -98,5 +99,41 @@ function startGame() {
         alertDisplay.classList.add("error");
         alertDisplay.style.display = "flex";
         playButton.classList.add("disabled");
+    }
+    if (player === "SCISSORS" && cpu === "PAPER") {
+        cpuImg.src = choseImg[1];
+        playerImg.src = choseImg[4];
+    }
+    if (player === "ROCK" && cpu === "PAPER") {
+        cpuImg.src = choseImg[1];
+        playerImg.src = choseImg[2];
+    }
+    if (player === "PAPER" && cpu === "PAPER") {
+        cpuImg.src = choseImg[1];
+        playerImg.src = choseImg[0];
+    }
+    if (player === "SCISSORS" && cpu === "ROCK") {
+        cpuImg.src = choseImg[3];
+        playerImg.src = choseImg[4];
+    }
+    if (player === "ROCK" && cpu === "ROCK") {
+        cpuImg.src = choseImg[3];
+        playerImg.src = choseImg[2];
+    }
+    if (player === "PAPER" && cpu === "ROCK") {
+        cpuImg.src = choseImg[3];
+        playerImg.src = choseImg[0];
+    }
+    if (player === "SCISSORS" && cpu === "SCISSORS") {
+        cpuImg.src = choseImg[5];
+        playerImg.src = choseImg[4];
+    }
+    if (player === "ROCK" && cpu === "SCISSORS") {
+        cpuImg.src = choseImg[5];
+        playerImg.src = choseImg[2];
+    }
+    if (player === "PAPER" && cpu === "SCISSORS") {
+        cpuImg.src = choseImg[5];
+        playerImg.src = choseImg[0];
     }
 }
