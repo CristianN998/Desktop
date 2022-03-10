@@ -24,6 +24,7 @@
 body {
     background: var(--grey-base);
     color: var(--white-base);
+    overflow-x: hidden;
 }
 
 html {
@@ -838,9 +839,8 @@ section {
     -o-border-radius: 20%;
 }
 
-.footer {
+.footer-wrapper {
     width: 100%;
-    height: 30px;
     display: flex;
     justify-content: center;
     background: var(--grey-base);
