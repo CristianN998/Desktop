@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometric Figures | MathGod by Cricadev</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Geometric Figures</h1>
+    </header>
+    <p>First workshop of the javascript practice course</p>
+    <h2>Hey I'm your mathematic assistant</h2>
+    <form action="">
+        <label for="square-input"> Type the side of your square: </label>
+        <input id="square-input" type="number" placeholder="side" />
+        <button type="button" onclick="perimeterCalculate()">
+        Get perimeter
+      </button>
+        <button type="button" onclick="areaCalculate()">Get area</button>
+    </form>
+    <form action="">
+        <label for="triangle-input ">
+        Type the measurements of your triangle:
+      </label>
+
+        <input id="triangle-side1" type="number" placeholder="side1" />
+        <input id="triangle-side2" type="number " placeholder="side2" />
+
+        <input id="triangle-base" type="number" placeholder="base" />
+        <input id="triangle-height" type="number" placeholder="height (optional)" />
+
+        <button type="button" onclick="perimeterCalculateTriangle()">
+        Get perimeter
+      </button>
+        <button type="button" onclick="areaCalculateTriangle()">Get area</button>
+    </form>
+    <form action="">
+        <label for="circle-input"> Type the radio of your circle</label>
+        <input id="circle-input" type="number" placeholder="radio" />
+        <button type="button" onclick="diameterCalculateCircle()">
+        Get diameter
+      </button>
+        <button type="button" onclick="areaCalculateCircle()">Get area</button>
+        <button type="button" onclick="circumCalculateCircle()">
+        Get perimeter
+      </button>
+    </form>
+    <form action="">
+        <label for="iso-sides">
+        Type the measurements of isosceles triangle in centimeters</label
+      >
+      <input id="iso-sides" type="number" placeholder="sides" />
+
+      <input id="iso-base" type="number" placeholder="base" />
+      <button type="button" onclick="heightIsoTriangle()">Get height</button>
+    </form>
+  </body>
+  <script src="figures.js"></script>
+</html>
